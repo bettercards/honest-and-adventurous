@@ -11,7 +11,19 @@
         <title>Truth or Dare</title>
     </head>
     <body>
-        <h1>It's working.</h1>
-        <p>Here's some normal text.</p>
+        <p>Enter player details.</p>
+        <div id="players">
+        </div>
+        <input type="text" id="name"/>
+        <input type="checkbox" id="isgirl"/>
+        <button id="add" onclick="addPlayer()">Add</button>
+        <button id="remove" onclick="removePlayer()">Remove</button>
+        <hr/>
+        <button id="startButton" onclick="firstTurn()">Start!</button>
     </body>
 </html>
+<script>
+    $(() => {
+        showPlayers();
+    });
+</script>

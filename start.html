@@ -10,8 +10,18 @@
         <script src="game.js"></script>
         <title>Truth or Dare</title>
     </head>
+
     <body>
-        <h1>It's working.</h1>
-        <p>Here's some normal text.</p>
+        <h1>Launch game</h1>
+            <button onclick="continueGame()" class="continue" id="continue">Continue Game</button>
+            <button onclick="startNewGame()" class="startNew">New Game</button>
     </body>
+
+    <script>
+        $(() => {
+            if (!loadState()) {
+                $("#continue").hide();
+            }
+        });
+    </script>
 </html>

@@ -11,7 +11,23 @@
         <title>Truth or Dare</title>
     </head>
     <body>
-        <h1>It's working.</h1>
-        <p>Here's some normal text.</p>
+        <h3>Caller: <span id="caller"></span></h3>
+        <h3>Doer: <span id="doer"></span></h3>
+
+        <div id="choiceButtons">
+            <button class="truth" onclick="doTruth()">Truth</button>
+            <button class="dare" onclick="doDare()">Dare</button>
+        </div>
+
+        <div id="task">
+            <div id="taskText"></div>
+            <hr>
+            <span class="nextCaller">Next caller: <span id="nextCaller"></span></span>
+            <button id="nextTurn" onclick="nextTurn()">Next turn</button>
+        </div>
+
     </body>
 </html>
+<script>
+    $(() => takeTurn());
+</script>

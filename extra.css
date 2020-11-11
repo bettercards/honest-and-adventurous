@@ -1,9 +1,51 @@
 body {
   padding: 5px;
-  background-color: black;
+  background-color:black;
   color: white;
 }
 
 li {
   margin-bottom: 15px;
+}
+
+button {
+  display: block;
+  margin: 12px 0px;
+  width: 100%;
+  color: white;
+  background-color: #404040;
+  border-radius: 8px;
+}
+
+button.continue {
+  background-color: #000040;
+}
+
+button.startNew {
+  background-color: #004000;
+}
+
+.boy {
+  color: lightblue;
+}
+
+.girl {
+  color: pink;
+}
+
+button.truth {
+  margin-top: 30px;
+  background-color: green;
+  height: 40px;
+  opacity: 5%;
+}
+
+button.dare {
+  background-color: maroon;
+  height: 40px;
+  opacity: 5%;
+}
+
+.nextCaller {
+  font-size: smaller;
 }

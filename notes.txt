@@ -1,0 +1,35 @@
+game start page
+  if found local storage, show continue button -> game turns page
+  also just show "new game" button
+
+new game page
+    name text plus checkbox "is female", plus "add another" button
+    "done" button when all added
+    load data.json into local storage, go to turns page
+
+turns page
+    keep count of turn
+    each caller loops through all doers (excluding self)
+
+turn no      caller      doer
+0            0           1
+1            1           0
+2            2           0
+3            0           2
+4            1           2
+5            2           1
+6            0           1
+7            1           0
+x            x mod np
+
+
+0-01    0 = x mod (np - 1) so player = [1,2][x mod (np -1)]
+1-12    1 = x mod (np - 1) so player = [0,2][x mod (np -1)]
+2-20    0 = x mod (np - 1) so player = [0,1][x mod (np -1)]
+3-02    1 = x mod (np - 1) so player = [0,2][x mod (np -1)]
+4-10    0
+5-21    1
+6-01
+
+caller = x mod np
+doer = [not-me-players][x mod (np -1)]
